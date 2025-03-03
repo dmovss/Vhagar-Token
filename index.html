@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vhagar Token - Ignite the Blockchain Future</title>
+    <!-- Google Fonts: Orbitron for logo, Montserrat for body, Space Grotesk for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pop-up Modal -->
+    <div id="telegram-popup" class="popup">
+        <div class="popup-content animate-popup">
+            <button id="close-popup" class="close-btn" aria-label="Close popup">✕</button>
+            <h2>Welcome to Vhagar Token</h2>
+            <p>Connect with us on Telegram to join the revolution!</p>
+            <div class="popup-buttons">
+                <a href="https://t.me/vhgcoin" target="_blank" class="popup-button animate-btn">Follow Telegram</a>
+                <a href="https://t.me/vhagarvhg_bot" target="_blank" class="popup-button animate-btn delay-1">Telegram Bot</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo animate-logo">Vhagar Token</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active animate-nav">Home</a></li>
+            <li><a href="#about" class="animate-nav">About</a></li>
+            <li><a href="#features" class="animate-nav">Features</a></li>
+            <li><a href="#tokenomics" class="animate-nav">Tokenomics</a></li>
+            <li><a href="#legal" class="animate-nav">Legal</a></li>
+            <li><a href="#blog" class="animate-nav">Blog</a></li>
+            <li><a href="#contact" class="animate-nav">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Ignite Vhagar</h1>
+            <p class="animate-text delay-1">A cutting-edge ERC-20 token on Ethereum, crafted for creators, hodlers, and visionaries.</p>
+            <div class="hero-buttons">
+                <button class="cta-button animate-btn" onclick="scrollToSection('features')">Discover Features</button>
+                <button class="cta-button animate-btn delay-2" onclick="scrollToSection('tokenomics')">Explore Tokenomics</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="animate-text">About Vhagar Token</h2>
+        <div class="content-block animate-text delay-1">
+            <p>Vhagar Token is a revolutionary ERC-20 asset on the Ethereum blockchain, designed to democratize crypto creation. Built using no-code platforms like Bitbond's Token Tool, it’s accessible to everyone—no programming skills required. With mintable and burnable features, Vhagar offers unprecedented flexibility for managing supply and value.</p>
+            <p>What sets us apart from other "Vhagar" tokens on Solana, Ethereum, and Kaspa? Our focus on community empowerment, innovative governance, and versatile use cases. From funding projects to powering NFTs, Vhagar is the token for the decentralized future.</p>
+        </div>
+        <div class="button-group">
+            <button class="nav-button animate-btn" onclick="scrollToSection('features')">Learn More</button>
+            <button class="nav-button animate-btn delay-2" onclick="scrollToSection('contact')">Join the Community</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2 class="animate-text">Features of Vhagar</h2>
+        <div class="features-grid">
+            <div class="feature-item animate-card">
+                <h3>Mintable Supply</h3>
+                <p>Mint new tokens effortlessly to fuel projects, reward users, or grow your ecosystem—all secured by Ethereum’s blockchain.</p>
+            </div>
+            <div class="feature-item animate-card delay-1">
+                <h3>Burnable Mechanism</h3>
+                <p>Burn tokens to reduce supply, boosting scarcity and value for long-term holders.</p>
+            </div>
+            <div class="feature-item animate-card delay-2">
+                <h3>Wallet Integration</h3>
+                <p>Compatible with MetaMask, Trust Wallet, and more, ensuring seamless transactions.</p>
+            </div>
+            <div class="feature-item animate-card delay-3">
+                <h3>Decentralized Governance</h3>
+                <p>Vote on Vhagar’s future with a community-driven model that puts power in your hands.</p>
+            </div>
+        </div>
+        <button class="nav-button animate-btn" onclick="scrollToSection('tokenomics')">Dive into Tokenomics</button>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section">
+        <h2 class="animate-text">Tokenomics</h2>
+        <div class="content-block animate-text delay-1">
+            <p>Vhagar’s tokenomics are engineered for sustainability, growth, and community benefit. Here’s the blueprint (pending final launch details):</p>
+            <ul>
+                <li><strong>Total Supply:</strong> [TBD] – Mintable with an initial cap for stability.</li>
+                <li><strong>Circulating Supply:</strong> Dynamic, controlled by burning to prevent inflation.</li>
+                <li><strong>Use Cases:</strong> Staking, payments, NFT marketplaces, governance voting, and more.</li>
+                <li><strong>Distribution:</strong> 50% community, 30% development team, 20% reserves (adjustable post-launch).</li>
+                <li><strong>Transaction Fee:</strong> Optional 1-2% tax, redistributed to holders or burned for deflation.</li>
+            </ul>
+            <p>Our goal? A balanced ecosystem where flexibility meets economic incentives, making Vhagar a powerhouse for traders and hodlers alike.</p>
+        </div>
+        <button class="nav-button animate-btn" onclick="scrollToSection('features')">Back to Features</button>
+    </section>
+
+    <!-- Legal Section -->
+    <section id="legal" class="section">
+        <h2 class="animate-text">Legal Overview</h2>
+        <div class="content-block animate-text delay-1">
+            <p>Vhagar navigates a global regulatory landscape. Key points to understand:</p>
+            <ul>
+                <li><strong>Securities Risk:</strong> In regions like the US (SEC) or EU (MiCA), Vhagar could be a security if tied to profits—registration may apply.</li>
+                <li><strong>Compliance:</strong> AML/KYC rules might be required for distribution or sales.</li>
+                <li><strong>Global Variance:</strong> From China’s crypto bans to US disclosure laws, regulations differ widely.</li>
+            </ul>
+            <p><strong>Disclaimer:</strong> This isn’t legal advice. Consult a professional to ensure compliance before engaging with Vhagar.</p>
+        </div>
+        <button class="nav-button animate-btn" onclick="scrollToSection('contact')">Ask a Question</button>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <h2 class="animate-text">Blog & Updates</h2>
+        <div class="content-block animate-text delay-1">
+            <p>Stay informed with Vhagar’s latest developments:</p>
+            <ul>
+                <li>Smart contract audits and technical updates.</li>
+                <li>Community events, governance votes, and partnerships.</li>
+                <li>Guides on staking, trading, and integrating Vhagar with dApps.</li>
+            </ul>
+            <p>Our blog launches soon—follow us on Telegram for instant updates!</p>
+        </div>
+        <button class="nav-button animate-btn" onclick="scrollToSection('home')">Back to Top</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="animate-text">Contact Us</h2>
+        <form id="contact-form" class="contact-form animate-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="nav-button animate-btn">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://t.me/vhgcoin" target="_blank" class="social-button animate-btn">Telegram</a>
+            <a href="#" class="social-button animate-btn delay-1">Twitter</a>
+            <a href="#" class="social-button animate-btn delay-2">Discord</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer animate-footer">
+        <p>© 2025 Vhagar Token. All rights reserved. Powered by Ethereum.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
