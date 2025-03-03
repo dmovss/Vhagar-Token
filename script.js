@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('telegram-popup');
     const closeBtn = document.getElementById('close-popup');
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
     popup.style.display = 'flex';
 
@@ -16,11 +18,22 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => { popup.style.display = 'none'; }, 500);
         });
     });
+
+    // Toggle hamburger menu
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+    });
 });
 
 // Smooth scroll to section
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    const navLinks = document.querySelector('.nav-links');
+    if (window.innerWidth <= 768) {
+        navLinks.classList.remove('active');
+        document.querySelector('.hamburger').textContent = '☰';
+    }
 }
 
 // Highlight active navigation link and update navbar on scroll
