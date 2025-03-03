@@ -5,13 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     popup.style.display = 'flex';
 
-    // Close popup with cross button
     closeBtn.addEventListener('click', () => {
         popup.style.animation = 'popupFadeOut 0.5s ease forwards';
         setTimeout(() => { popup.style.display = 'none'; }, 500);
     });
 
-    // Close popup when clicking Telegram buttons
     document.querySelectorAll('.popup-button').forEach(button => {
         button.addEventListener('click', () => {
             popup.style.animation = 'popupFadeOut 0.5s ease forwards';
@@ -66,7 +64,7 @@ contactForm.addEventListener('submit', function(event) {
 });
 
 // Trigger animations on scroll
-const animateElements = document.querySelectorAll('.animate-text, .animate-card, .animate-btn, .animate-form, .animate-nav');
+const animateElements = document.querySelectorAll('.animate-text, .animate-card, .animate-btn, .animate-form');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
